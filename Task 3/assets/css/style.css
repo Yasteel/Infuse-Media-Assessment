@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    table-layout: fixed;
+    background-color: #adadad;
+}
+
+table.main{
+    width: 100%;
+    max-width: 600px;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+tr.logo td{
+    padding: 1rem;
+}
+
+tr.banner img{
+    width: 100%;
+    height: 150px;
+}
+tr.banner td{
+    position: relative;
+}
+
+tr.banner p{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+tr.main_text td{
+    padding: 1.2rem;
+}
+tr.main_text p:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+
+tr.sub_text td{
+    padding: 0 2.5rem;
+}
+tr.sub_text td ul{
+    list-style-type: none;
+}
+tr.sub_text td ul li{
+    margin-bottom: 1rem;
+    color: #adadad;
+}
+tr.sub_text td ul li::before{
+    content: '\2022';
+
+    color: #29A3A0;
+    font-size: 1.5rem;
+}
+
+tr.button td, 
+tr.under_text td,
+tr.footer td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tr.button td button{
+    padding: .9rem 1.8rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    background: #29A3A0;
+    color: #fff;
+    cursor: pointer;
+}
+tr.button td button:hover{
+    filter: brightness(130%);
+}
+
+tr.under_text td{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #29A3A0;
+}
+
+tr.footer td{
+    font-size: .7rem;
+}
+tr.footer td .unsubscribe_link a{
+    text-decoration: none;
+    color: #29A3A0;
+    cursor: pointer;
+}
+tr.footer td .unsubscribe_link a:hover{
+    text-decoration: underline;
+}
+
+tr.footer td{
+    padding: 1.5rem 0 0 0;
+}
+tr.footer:last-child td{
+    padding: 1rem 0;
+    
+}
